@@ -17,7 +17,7 @@ description              : "元认知，践行者，读书，写作，编程，�
 url                      : https://lewiswolfe.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "lewiswolfe/lewiswolfe.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/bio-image.jpg" # path of fallback teaser image, e.g. "/assets/images/bio-image.jpg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
