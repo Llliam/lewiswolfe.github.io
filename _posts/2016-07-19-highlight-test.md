@@ -1,8 +1,6 @@
 ---
 title: Highlight Test
-categories:
- - Test
-tags:
+categories: 技术
 ---
 
 This is a highlight test.

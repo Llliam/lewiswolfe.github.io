@@ -4,17 +4,17 @@
 # ---------------------------------------------------------------
 
 # Site
-title: NexT
+title: 李伟刚的博客
 subtitle:
-description:
-author: John Doe
+description: 刻意成长践行者
+author: 李伟刚
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: en
+language: zh-Hans
 date_format: '%Y-%m-%d'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url:
+url: https://lewiswolfe.github.io
 baseurl:
 permalink: pretty
 
@@ -86,7 +86,7 @@ keywords: "Jekyll, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2016-2020
 
 # icon between year and author @Footer
 authoricon: heart
@@ -117,12 +117,13 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories/
-  #about: /about/
+  categories: /categories/
+  about: /about/
   archives: /archives/
-  tags: /tags/
+  #tags: /tags/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
+  search: /search/ 
 
 
 # Enable/Disable menu icons.
@@ -141,6 +142,7 @@ menu_icons:
   archives: archive
   sitemap: sitemap
   commonweal: heartbeat
+  search: search
 
 
 
@@ -150,9 +152,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -167,19 +169,20 @@ font:
   enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
-  host:
+  host: 
 
   # Global font settings used on <body> element.
   global:
     # external: true will load this font family from host.
     external: true
-    family: Lato
+    family: 
+
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
   headings:
     external: true
-    family:
+    family: 
 
   # Font settings for posts
   # Fallback to `global` font settings.
@@ -212,8 +215,23 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
+social:
   #LinkLabel: Link
+  GitHub: https://github.com/lewiswolfe 
+  E-Mail: mailto:lewisawolfe@gmail.com 
+  #Google: https://plus.google.com/yourname || google
+  #Twitter: https://twitter.com/yourname || twitter
+  #FB Page: https://www.facebook.com/yourname || facebook
+  #VK Group: https://vk.com/yourname || vk
+  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
+  #YouTube: https://youtube.com/yourname || youtube
+  #Instagram: https://instagram.com/yourname || instagram
+  #Skype: skype:yourname?call|chat || skype
+  微博: https://weibo.com/xiaoxiaomayi 
+  知乎: https://www.zhihu.com/people/lewiswolfe 
+  #豆瓣: https://www.douban.com/people/lewiswolfe 
+
+
 
 
 # Social Links Icons
@@ -226,18 +244,32 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
+  E-Mail: envelope
   Twitter: twitter
-  Weibo: weibo
+  微博: weibo
+
+
+
+# Blog rolls
+links_icon: link
+links_title: 友情链接
+#links_layout: block
+links_layout: inline
+links:
+  阳志平: http://www.yangzhiping.com/
+  廖雪峰: https://www.liaoxuefeng.com/
+  阮一峰: http://www.ruanyifeng.com/blog/archives.html
+
 
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-#avatar:
+avatar: /assets/images/avatar.png
 
 
 # Table Of Contents in the Sidebar
 toc:
-  enable: true
+  enable: false
 
   # Automatically add list number to toc.
   number: true
@@ -263,9 +295,9 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
+  #display: post
   #display: always
-  #display: hide
+  display: hide
   #display: remove
 
   # Sidebar offset from top menubar in pixels.
@@ -278,13 +310,6 @@ sidebar:
   # Scroll percent label in b2t button
   scrollpercent: false
 
-
-# Blog rolls
-#links_title: Links
-#links_layout: block
-#links_layout: inline
-#links:
-  #Title: http://example.com/
 
 
 # ---------------------------------------------------------------
@@ -323,8 +348,16 @@ post_wordcount:
 # Wechat Subscriber
 #wechat_subscriber:
   #enabled: true
-  #qcode: /path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg
+  #qcode: /images/wechat-public.jpg ex. /uploads/wechat-qcode.jpg
   #description: ex. subscribe to my blog by scanning my public wechat account
+
+
+# Reward
+#reward_comment: 打赏
+wechatpay: /assets/images/wechat-reward.jpg
+#alipay: /images/alipay-reward.jpg
+#bitcoin: /images/bitcoin.png
+
 
 # Declare license on posts
 post_copyright:
@@ -368,11 +401,11 @@ mathjax:
 # Han Support docs: https://hanzi.pro/
 han: false
 
-# Swiftype Search API Key
+#  Search API Key
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: b948278cf16c4960a93335f0f54d8a3d
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -380,7 +413,7 @@ han: false
 # Disqus
 disqus:
   enable: false
-  shortname:
+  shortname: lewiswolfe
   count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
@@ -423,10 +456,13 @@ changyan:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-#google_site_verification:
+google_site_verification: "FuWtofeOqu_ks1Hm011ThNUMzlV3xMiBw6znWMHsBWM"
 
 # Google Analytics
-#google_analytics:
+google_analytics:
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : "UA-107295825-1" # Replace this with your ID, or delete
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
@@ -487,9 +523,9 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: 3PWVvkOcEityWS1wVntgt8s5-gzGzoHsz #<app_id>
+  app_key: 2kHF45EeXe72e9Raj4hMR5WU  #<app_key>
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/

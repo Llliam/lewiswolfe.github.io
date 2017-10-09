@@ -1,6 +1,6 @@
 ---
 title: Emoji Test
-tags:
+categories: 技术
 ---
 
 This is an emoji test. :smile: lol.
