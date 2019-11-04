@@ -1,7 +1,8 @@
 ---
-title:  "搭建独立博客"
-categories: program
+layout: default
 ---
+
+# 搭建博客
 
 本教程适用于Mac平台，要求会使用git基本操作，命令行基本操作。
 
