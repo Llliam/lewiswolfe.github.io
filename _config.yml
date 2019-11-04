@@ -1,5 +1,5 @@
-theme: jekyll-theme-leap-day
 title: 热爱生活
 description: 中文名：小牧 英文名：Liam
 show_downloads: ["true" or "false" to indicate whether to provide a download URL]
 google_analytics: [Your Google Analytics tracking ID]
+theme: jekyll-theme-leap-day
